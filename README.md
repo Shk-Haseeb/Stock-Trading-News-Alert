@@ -2,7 +2,7 @@
 This is a Python script that keeps an eye on a stock price 📉📈 and sends you breaking news updates via SMS if there's a big movement! 📲
 
 ## 🔧 What It Does
-- Checks the daily closing prices of TSLA using Alpha Vantage.
+- Checks the daily closing prices of your preferred stock using Alpha Vantage.
 - Calculates the % difference between yesterday and the day before.
 - If the price moves more than 5% ⬆️ or ⬇️:
 - Fetches the top 3 news articles about Tesla from NewsAPI.
