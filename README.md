@@ -22,4 +22,4 @@ Brief: Tesla stock took a hit today following recent economic data releases and 
 - Replace the placeholders like STOCK_API_KEY, NEWS_API_KEY, TWILIO_SID, TWILIO_AUTH_KEY, etc.
 - Run the script: python stock_alert.py
 
-## ✅ Done! If Tesla moves big, you’ll get the news straight to your phone.
+## ✅ Done! If Stock moves big, you’ll get the news straight to your phone.
