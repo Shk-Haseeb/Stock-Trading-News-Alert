@@ -1,3 +1,25 @@
-This Stock Trading News Alert project is a simple yet powerful Python tool that keeps you updated on stock market movements and related news. It tracks a specified stock's daily closing prices using the Alpha Vantage API and calculates the percentage change between consecutive days. If the price change exceeds a defined threshold, the tool fetches the top three news articles related to the company using the NewsAPI and sends you an SMS alert via Twilio. The SMS includes the stock's price change percentage, a directional indicator (🔺 or 🔻), and news headlines with brief descriptions to keep you informed without manual monitoring.
+# 📈 Stock Alert Bot 🚀
+This is a Python script that keeps an eye on a stock price 📉📈 and sends you breaking news updates via SMS if there's a big movement! 📲
 
-To set up, you'll need API keys for Alpha Vantage and NewsAPI, as well as Twilio credentials for SMS notifications. Replace the placeholder keys in the script with your credentials and configure your Twilio phone number and recipient's number. Once the setup is complete, simply run the script to monitor your chosen stock and receive timely alerts whenever there’s a significant price movement. This project is perfect for traders, investors, or anyone who wants quick updates on stock trends and company news directly on their phone.
+## 🔧 What It Does
+- Checks the daily closing prices of TSLA using Alpha Vantage.
+- Calculates the % difference between yesterday and the day before.
+- If the price moves more than 5% ⬆️ or ⬇️:
+- Fetches the top 3 news articles about Tesla from NewsAPI.
+- Sends you the headlines and summaries via Twilio SMS!
+
+## 💡 Example SMS
+TSLA: 🔻5%
+Headline: Tesla Shares Dip After Market Shock
+Brief: Tesla stock took a hit today following recent economic data releases and investor concerns.
+
+## 🔑 You'll Need
+- 📊 Alpha Vantage API key
+- 📰 NewsAPI key
+- 📞 Twilio account (for sending SMS)
+
+## 🚀 How to Run
+- Replace the placeholders like STOCK_API_KEY, NEWS_API_KEY, TWILIO_SID, TWILIO_AUTH_KEY, etc.
+- Run the script: python stock_alert.py
+
+## ✅ Done! If Tesla moves big, you’ll get the news straight to your phone.
