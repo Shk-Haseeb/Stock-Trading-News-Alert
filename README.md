@@ -1,25 +1,22 @@
-# 📈 Stock Alert Bot 🚀
-This is a Python script that keeps an eye on a stock price 📉📈 and sends you breaking news updates via SMS if there's a big movement! 📲
+# 📈 Stock Alert Bot
 
-## 🔧 What It Does
-- Checks the daily closing prices of your preferred stock using Alpha Vantage.
-- Calculates the % difference between yesterday and the day before.
-- If the price moves more than 5% ⬆️ or ⬇️:
-- Fetches the top 3 news articles about Tesla from NewsAPI.
-- Sends you the headlines and summaries via Twilio SMS!
+This is the **second project** I built for the *Advanced Programming* course at the University of Helsinki. It’s a Python script that **watches any stock you choose** and sends you a **news update via SMS** if the price jumps or drops more than 5%.
 
-## 💡 Example SMS
-TSLA: 🔻5%
-Headline: Tesla Shares Dip After Market Shock
-Brief: Tesla stock took a hit today following recent economic data releases and investor concerns.
+---
 
-## 🔑 You'll Need
-- 📊 Alpha Vantage API key
-- 📰 NewsAPI key
-- 📞 Twilio account (for sending SMS)
+## ⚙️ How It Works
 
-## 🚀 How to Run
-- Replace the placeholders like STOCK_API_KEY, NEWS_API_KEY, TWILIO_SID, TWILIO_AUTH_KEY, etc.
-- Run the script: python stock_alert.py
+- Gets daily stock data from **Alpha Vantage**
+- Compares closing prices for the last two days
+- If the change > 5%:
+  - Fetches 3 relevant news stories via **NewsAPI**
+  - Sends them to your phone with **Twilio SMS**
+ 
+## 🚀 Setup
 
-## ✅ Done! If Stock moves big, you’ll get the news straight to your phone.
+1. Open `main.py` and update:
+   - Stock symbol and company name
+   - Your API keys (Alpha Vantage, NewsAPI)
+   - Twilio SID, auth token, and phone numbers
+2. Run the script:
+   - python main.py
